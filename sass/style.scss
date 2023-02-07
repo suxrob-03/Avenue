@@ -2815,105 +2815,155 @@ button {
 
 @media screen and (max-width:375px) {
     .container {
-       
+
         main {
             section {
                 &:nth-of-type(1) {
-                    .section_row_1 {
-                        .section_row_1_col_one {
-                            h1 {
-                                font-size: 32px;
-                                padding-top: 10px;
-                            }
-
-                            p {
-                                font-size: 12px;
-                                padding: 10px 20px;
-                            }
-
-                            .button_two {
-                                width: 100%;
-                                justify-content: center;
-                                display: block;
-
-                                button {
-                                    margin: 10px 50px;
-                                    padding: 15px;
-                                }
-                            }
-
-                            .aa1 {
-                                justify-content: center;
-                                display: block;
-                                padding: 0 20px;
-                                margin-bottom: 40px;
-                            }
-
-                        }
-
-                        .section_row_1_col_two {
-                            width: 100%;
-                            padding: 0;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-
-                            img {
-                                padding: 0 10px;
-                                object-fit: cover;
-                                width: 100%;
-                            }
-                        }
-                    }
-
                     .section_row_3 {
                         .section_row_3_card {
                             width: 100%;
-                            height: 300px;
+                            height: 350px;
+                            padding: 30px 25px;
 
                             p {
-                                padding: 20px 0;
+                                padding: 40px 0;
                             }
 
                             button {
-                                text-align: center;
-                                font-size: 18px;
-                                margin: 10px 20%;
+                                margin: 0 20%;
                                 width: 60%;
-                                height: 45px;
-                            }   
+
+                                a{
+                                    font-size: 18px;
+                                }
+                            }
 
                         }
                     }
                 }
 
                 &:nth-of-type(2) {
+                    .section_row_1 {
+                        .section_row_1_col_two {
+                            h1 {
+                                font-size: 24px;
+                                line-height: 28px;
+
+                                sub {
+                                    font-size: 18px;
+                                }
+
+
+                            }
+
+                            p {
+                                padding-top: 0;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    .section_row_2 {
+                        padding: 0 6%;
+                        .section_row_2_col_one {
+                            h1 {
+                                padding: 0;
+                                font-size: 24px;
+                                line-height: 28px;
+                                text-align: center;
+                                sub{
+                                    font-size: 18px;
+                                }
+
+                            }
+
+                        }
+
+                        .section_row_2_col_two {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
                     .section_row_3 {
                         .section_row_3_card {
                             width: 100%;
-                            height: 300px;
-                            // padding: 30px 25px;
+                            height: 380px;
 
                             p {
-                                padding: 20px 0;
+                                padding: 40px 0;
                             }
 
                             button {
-                                text-align: center;
-                                font-size: 18px;
-                                margin: 10px 20%;
+                                margin: 0 20%;
                                 width: 60%;
-                                height: 45px;
-                            }
+                                height: 60px;
 
+                                a{
+                                    font-size: 18px;
+                                }
+
+                            }
 
                         }
                     }
                 }
+
+                &:nth-of-type(3) {
+                    padding: 0;
+                    .section_row_1 {
+
+                        .section_row_1_col_one {
+                            .img {
+                                width: 300px;
+                            }
+                        }
+
+                        .section_row_1_col_two {
+                            height: 550px;
+                            .section_card {
+                                .sectino_row_1_col_two_row_aa1 {
+                                    h2 {
+                                        padding: 10px 0;
+                                    }
+
+                                    p {
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+
+                    .section_row_2 {
+                        height: 350px;
+
+                        h1 {
+                            font-size: 28px;
+                            line-height: 36px;
+                        }
+
+                        .button {
+                            height: 100px;
+                            padding:80px 0;
+
+                        }
+                    }
+
+                }
             }
         }
     }
+
 }
+
+
 
 @media screen and (max-width:345px) {
     .container {
