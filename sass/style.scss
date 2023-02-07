@@ -2340,11 +2340,11 @@ button {
                             h1 {
                                 padding-top: 50px;
                                 text-align: center;
-                                font-size: 36px;
+                                font-size: 34px;
                                 line-height: 42px;
 
                                 sub {
-                                    font-size: 16px;
+                                    font-size: 24px;
                                 }
 
                                 br {
@@ -2428,10 +2428,12 @@ button {
 
                     .section_row_2 {
                         display: block;
+                        height: 500px;
+                        background-color: red;
 
 
                         h1 {
-                            padding: 60px 20px 0;
+                            padding: 60px 40px 0;
                             font-size: 32px;
                             line-height: 36px;
                         }
@@ -2853,13 +2855,13 @@ button {
                                 padding: 20px 0;
                             }
 
-
                             button {
+                                text-align: center;
                                 font-size: 18px;
-                                margin: 10px 10%;
-                                width: 80%;
-                                height: 50px;
-                            }
+                                margin: 10px 20%;
+                                width: 60%;
+                                height: 45px;
+                            }   
 
                         }
                     }
