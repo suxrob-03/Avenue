@@ -1690,19 +1690,30 @@ button {
   .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 {
     padding-top: 50px;
     text-align: center;
-    font-size: 32px;
+    font-size: 38px;
     line-height: 42px;
-  }
-  .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 br {
-    display: block;
   }
   .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 sub {
     font-size: 18px;
   }
+  .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 sub br {
+    display: block;
+  }
+  .container main section:nth-of-type(2) .section_row_2 .section_row_2_col_one {
+    padding-top: 0;
+    background-color: blue;
+  }
   .container main section:nth-of-type(2) .section_row_2 .section_row_2_col_one h1 {
-    font-size: 32px;
-    line-height: 36px;
+    padding-top: 50px;
     text-align: center;
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .container main section:nth-of-type(2) .section_row_2 .section_row_2_col_one h1 sub {
+    font-size: 18px;
+  }
+  .container main section:nth-of-type(2) .section_row_2 .section_row_2_col_one h1 sub br {
+    display: block;
   }
   .container main section:nth-of-type(2) .section_row_2 .section_row_2_col_one p {
     font-size: 16px;

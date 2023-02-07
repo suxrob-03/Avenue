@@ -2574,13 +2574,13 @@ button {
                             h1 {
                                 padding-top: 50px;
                                 text-align: center;
-                                font-size: 32px;
+                                font-size: 38px;
                                 line-height: 42px;
-                                br{
-                                    display: block;
-                                }
-
+                                
                                 sub {
+                                    br{
+                                        display: block;
+                                    }
                                     font-size: 18px;
                                 }
 
@@ -2591,12 +2591,25 @@ button {
 
                     .section_row_2 {
                         .section_row_2_col_one {
+                            padding-top:0 ;
+                            background-color: blue;
+
                             h1 {
-                                font-size: 32px;
-                                line-height: 36px;
+                                padding-top: 50px;
                                 text-align: center;
+                                font-size: 38px;
+                                line-height: 42px;
+                                
+                                sub {
+                                    br{
+                                        display: block;
+                                    }
+                                    font-size: 18px;
+                                }
+
 
                             }
+                            
 
                             p {
                                 font-size: 16px;
