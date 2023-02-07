@@ -2822,8 +2822,10 @@ button {
                     .section_row_1{
                         .section_row_1_col_one{
                             .button_two{
+                                display: block;
+                                width: 100%;
                                 button{
-                                    font-size: 12px;
+                                    margin: 10px auto;
                                 }
                             }
                         }
