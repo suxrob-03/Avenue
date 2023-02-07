@@ -2507,7 +2507,7 @@ button {
             }
 
             button {
-                padding: 10px 5px;
+                padding: 10px 20px;
                 font-size: 24px;
                 position: absolute;
                 left: 32px;
@@ -2816,6 +2816,7 @@ button {
                                 display: block;
 
                                 button {
+                                    margin: 10px 50px;
                                     padding: 15px;
                                 }
                             }
