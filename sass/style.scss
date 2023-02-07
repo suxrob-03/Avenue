@@ -2819,6 +2819,15 @@ button {
         main {
             section {
                 &:nth-of-type(1) {
+                    .section_row_1{
+                        .section_row_1_col_one{
+                            .button_two{
+                                button{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
                     .section_row_3 {
                         .section_row_3_card {
                             width: 100%;
