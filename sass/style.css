@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+button {
+  outline: none;
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   height: auto;
@@ -11,14 +16,18 @@
 }
 .container nav {
   width: 100%;
+  background-color: #000;
   padding: 10px 6%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  position: fixed;
+  border: 1px solid rgb(56, 55, 55);
+  z-index: 1;
 }
 .container nav h2 {
-  font-family: "Eastwood";
+  font-family: " Eastwood";
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -44,6 +53,35 @@
   line-height: 31px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+  position: relative;
+}
+.container nav ul li a::after {
+  width: 0px;
+  height: 2.5px;
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  border-radius: 0 16px 16px 0;
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.5s;
+}
+.container nav ul li a::before {
+  width: 0px;
+  height: 2.5px;
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  border-radius: 16px 0 0 16px;
+  right: 50%;
+  bottom: -5px;
+  transition: all 0.5s;
+}
+.container nav ul li a:hover::after {
+  width: 65%;
+}
+.container nav ul li a:hover::before {
+  width: 65%;
 }
 .container nav button {
   padding: 16px 24px;
@@ -69,6 +107,7 @@
   display: none;
 }
 .container nav .menu i {
+  background-color: #a99292;
   color: #fff;
 }
 .container main {
@@ -511,7 +550,7 @@
 }
 .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two {
   width: 100%;
-  height: 500px;
+  height: 50vh;
 }
 .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two h1 {
   padding-bottom: 40px;
@@ -527,6 +566,8 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  gap: 50px;
+  padding: 10px 0;
 }
 .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two .section_card .sectino_row_1_col_two_row_aa1 {
   width: 100%;
@@ -542,7 +583,6 @@
   padding-bottom: 18px;
 }
 .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two .section_card .sectino_row_1_col_two_row_aa1 p {
-  padding: 0 180px 40px 0;
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -573,13 +613,13 @@
 }
 .container main section:nth-of-type(3) .section_row_2 .button button {
   padding: 16px 24px;
-  background: #4A3D68;
   border-radius: 10px;
+  background-color: transparent;
   border: 2px solid #4A3D68;
   transition: all 0.4s;
 }
 .container main section:nth-of-type(3) .section_row_2 .button button:hover {
-  background-color: transparent;
+  background-color: rgba(74, 61, 104, 0.1725490196);
 }
 .container main section:nth-of-type(3) .section_row_2 .button button a {
   width: 100%;
@@ -597,11 +637,29 @@
   padding: 120px 6% 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
 }
 .container footer .footer_col {
   width: 100%;
   height: 100%;
   text-align: center;
+}
+.container footer .footer_col:nth-of-type(1) {
+  position: relative;
+  text-align: start;
+}
+.container footer .footer_col:nth-of-type(1)::after {
+  position: absolute;
+  content: "by_suxrob";
+  bottom: 0;
+  right: 25%;
+  color: rgba(255, 255, 255, 0.2666666667);
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container footer .footer_col:nth-of-type(1) h2 {
+  padding-bottom: 20px;
 }
 .container footer .footer_col:nth-of-type(1) .footer_follow {
   text-align: left;
@@ -613,6 +671,7 @@
   font-size: 18px;
   line-height: 29px;
   color: #FFFFFF;
+  padding-bottom: 20px;
 }
 .container footer .footer_col:nth-of-type(1) .footer_follow .footer_follow_svg {
   display: flex;
@@ -629,6 +688,7 @@
   color: #FFFFFF;
 }
 .container footer .footer_col p {
+  padding: 10px 0;
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
@@ -712,6 +772,9 @@
   }
 }
 @media screen and (max-width: 1500px) {
+  .container main section {
+    padding-top: 100px;
+  }
   .container main section:nth-of-type(1) .section_row_3 .section_row_3_card {
     width: 350px;
     height: 270px;
@@ -719,10 +782,14 @@
   .container main section:nth-of-type(1) .section_row_3 .section_row_3_card h1 {
     font-size: 32px;
     line-height: 36px;
+    padding-bottom: 20px;
   }
   .container main section:nth-of-type(1) .section_row_3 .section_row_3_card p {
-    line-height: 26px;
-    padding: 20px 0;
+    line-height: 18px;
+    padding: 0;
+  }
+  .container main section:nth-of-type(1) .section_row_3 .section_row_3_card button {
+    margin-top: 35px;
   }
   .container main section:nth-of-type(1) .section_row_3 .section_row_3_card button a {
     width: 100%;
@@ -756,8 +823,8 @@
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two .section_card {
     padding: 0;
-    gap: 20px;
-    padding: 10px 0;
+    gap: 60px;
+    padding: 40px 0;
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two .section_card .sectino_row_1_col_two_row_aa1 h2 {
     padding: 0px;
@@ -795,7 +862,7 @@
   }
   .container main section:nth-of-type(1) .section_row_3 .section_row_3_card button {
     padding: 0;
-    margin: 0;
+    margin: 50px 0 0;
     width: 100%;
     height: 20%;
   }
@@ -803,6 +870,9 @@
     width: 100%;
     line-height: 0;
     font-size: 18px;
+  }
+  .container main section:nth-of-type(2) {
+    padding: 0;
   }
   .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_one img {
     width: 95%;
@@ -834,11 +904,11 @@
     padding: 20px 0;
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two .section_card .sectino_row_1_col_two_row_aa1 h2 {
-    padding: 0px;
+    padding-bottom: 20px;
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two .section_card .sectino_row_1_col_two_row_aa1 p {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .container footer .footer_col h2 {
     line-height: 40px;
@@ -938,9 +1008,9 @@
   .container main section:nth-of-type(2) .section_row_3 .section_row_3_card {
     width: 270px;
     height: 290px;
-    padding: 40px 20px;
   }
   .container main section:nth-of-type(2) .section_row_3 .section_row_3_card h1 {
+    padding: 0;
     font-size: 24px;
   }
   .container main section:nth-of-type(2) .section_row_3 .section_row_3_card p {
@@ -954,7 +1024,6 @@
     padding: 10px 4%;
   }
   .container main section:nth-of-type(1) .section_row_1 .section_row_1_col_one h1 {
-    padding-top: 100px;
     font-size: 48px;
   }
   .container main section:nth-of-type(1) .section_row_1 .section_row_1_col_one p {
@@ -1059,6 +1128,12 @@
   .container nav button {
     padding: 10px 16px;
   }
+  .container main section {
+    padding: 0;
+  }
+  .container main section:nth-of-type(1) {
+    padding-top: 100px;
+  }
   .container main section:nth-of-type(1) .section_row_1 .section_row_1_col_one h1 {
     font-size: 42px;
   }
@@ -1105,6 +1180,7 @@
   }
   .container main section:nth-of-type(3) .section_row_1 {
     display: block;
+    padding: 0;
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_one {
     display: flex;
@@ -1112,12 +1188,14 @@
     justify-content: center;
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_one .img {
-    width: 500px;
-    height: 610px;
+    width: 450px;
+    height: 560px;
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two {
-    padding-top: 50px;
+    padding: 50px 20px 0px;
     width: 100%;
+    height: 400px;
+    gap: 0;
     text-align: center;
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two h1 {
@@ -1133,6 +1211,15 @@
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two .section_card .sectino_row_1_col_two_row_aa1 p {
     font-size: 16px;
     line-height: 20px;
+  }
+  .container main section:nth-of-type(3) .section_row_2 {
+    height: 250px;
+  }
+  .container main section:nth-of-type(3) .section_row_2 .button {
+    padding: 50px;
+  }
+  .container footer {
+    padding: 0 4% 20px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1330,6 +1417,10 @@
   .container main section:nth-of-type(2) .section_row_3 .section_row_3_card button a {
     font-size: 24px;
   }
+  .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_one .img {
+    width: 300px;
+    height: 410px;
+  }
   .container footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1482,7 +1573,7 @@
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two {
     padding: 30px 0;
-    max-height: 500vh;
+    height: 600px;
   }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two .section_card {
     grid-template-columns: 1fr;
@@ -1513,13 +1604,18 @@
     grid-template-columns: 1fr;
   }
   .container footer .footer_col h2 {
+    text-align: center;
     font-size: 32px;
   }
   .container footer .footer_col ul {
     padding: 20px;
   }
   .container footer .footer_col p {
+    text-align: center;
     font-size: 18px;
+  }
+  .container footer .footer_col p br {
+    display: none;
   }
   .container footer .footer_col p br {
     display: block;
@@ -1536,15 +1632,20 @@
 @media screen and (max-width: 550px) {
   .container nav {
     padding: 5px 6%;
+    position: relative;
   }
   .container nav h2 {
-    font-size: 36px;
+    margin-left: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
   }
   .container nav ul {
     display: none;
   }
   .container nav button {
-    margin-right: -100px;
+    position: absolute;
+    left: 32px;
   }
   .container nav .menu {
     display: block;
@@ -1573,6 +1674,15 @@
   .container nav .menu .menu_ul ul li a {
     font-size: 24px;
   }
+  .container main section:nth-of-type(1) .section_row_3 .section_row_3_card {
+    height: 300px;
+  }
+  .container main section:nth-of-type(1) .section_row_3 .section_row_3_card button {
+    margin: 0 25%;
+    width: 45%;
+    height: 25%;
+    padding: 10px;
+  }
   .container main section:nth-of-type(2) .section_row_1 {
     grid-template-columns: 1fr;
   }
@@ -1596,6 +1706,29 @@
     -moz-text-align-last: center;
          text-align-last: center;
   }
+  .container main section:nth-of-type(2) .section_row_3 .section_row_3_card {
+    height: 300px;
+  }
+  .container main section:nth-of-type(2) .section_row_3 .section_row_3_card button {
+    margin: 0 25%;
+    width: 40%;
+    height: 25%;
+    padding: 10px;
+  }
+  .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_one .img {
+    width: 50%;
+    height: 400px;
+  }
+  .container main section:nth-of-type(3) .section_row_2 {
+    height: 150px;
+  }
+  .container main section:nth-of-type(3) .section_row_2 h1 {
+    padding: 20px 0 0;
+  }
+  .container footer .footer_col:nth-of-type(1)::after {
+    left: 35%;
+    bottom: -40px;
+  }
 }
 @media screen and (max-width: 480px) {
   .container nav button {
@@ -1608,6 +1741,11 @@
   }
   .container main section:nth-of-type(1) .section_row_3 .section_row_3_card p {
     padding: 40px 0;
+  }
+  .container main section:nth-of-type(1) .section_row_3 .section_row_3_card button {
+    margin: 0 10%;
+    width: 80%;
+    background-color: red;
   }
   .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 {
     font-size: 32px;
@@ -1642,6 +1780,13 @@
   .container main section:nth-of-type(2) .section_row_3 .section_row_3_card p {
     padding: 40px 0;
   }
+  .container main section:nth-of-type(2) .section_row_3 .section_row_3_card button {
+    margin: 0 10%;
+    width: 80%;
+  }
+  .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_one .img {
+    width: 300px;
+  }
   .container main section:nth-of-type(3) .section_row_1 .section_row_1_col_two .section_card .sectino_row_1_col_two_row_aa1 h2 {
     padding: 10px 0;
   }
@@ -1649,14 +1794,17 @@
     font-size: 12px;
     line-height: 20px;
   }
+  .container main section:nth-of-type(3) .section_row_2 {
+    height: 230px;
+  }
   .container main section:nth-of-type(3) .section_row_2 h1 {
-    padding-top: 60px;
-    font-size: 32px;
+    padding: 30px 10px 0;
+    font-size: 28px;
     line-height: 36px;
   }
   .container main section:nth-of-type(3) .section_row_2 .button {
     height: 100px;
-    padding: 10px 0;
+    padding: 60px 0;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1702,6 +1850,10 @@
   }
   .container main section:nth-of-type(1) .section_row_3 .section_row_3_card p {
     padding: 20px 0;
+  }
+  .container main section:nth-of-type(1) .section_row_3 .section_row_3_card button {
+    margin: 10px 0;
+    width: 100%;
   }
   .container main section:nth-of-type(2) .section_row_3 .section_row_3_card {
     width: 100%;
