@@ -2823,8 +2823,12 @@ button {
                         .section_row_1_col_one{
                             .button_two{
                                 display: block;
-                                width: 100%;
                                 button{
+                                    padding: 0;
+                                    line-height: 0;
+                                    width: 50%;
+                                    height: 50px;
+                                    font-size: 24px;
                                     margin: 10px auto;
                                 }
                             }
