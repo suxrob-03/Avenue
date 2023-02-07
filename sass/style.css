@@ -1636,8 +1636,8 @@ button {
     display: none;
   }
   .container nav button {
-    padding: 10px 20px;
-    font-size: 24px;
+    padding: 5px 10px;
+    font-size: 18px;
     position: absolute;
     left: 32px;
   }
