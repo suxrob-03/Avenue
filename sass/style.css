@@ -1694,7 +1694,7 @@ button {
     line-height: 42px;
   }
   .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 sub {
-    font-size: 18px;
+    font-size: 24px;
   }
   .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 sub br {
     display: block;
@@ -1707,10 +1707,10 @@ button {
     padding-top: 50px;
     text-align: center;
     font-size: 38px;
-    line-height: 42px;
+    line-height: 40px;
   }
   .container main section:nth-of-type(2) .section_row_2 .section_row_2_col_one h1 sub {
-    font-size: 18px;
+    font-size: 24px;
   }
   .container main section:nth-of-type(2) .section_row_2 .section_row_2_col_one h1 sub br {
     display: block;
