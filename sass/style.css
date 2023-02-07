@@ -1890,7 +1890,6 @@ button {
     padding: 40px 0;
   }
   .container main section:nth-of-type(2) .section_row_3 .section_row_3_card button {
-    background-color: red;
     margin: 0 25%;
     width: 50%;
     height: 50px;
