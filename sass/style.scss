@@ -803,18 +803,7 @@ button {
 
             &:nth-of-type(1) {
                 position: relative;
-
-                &::after{
-                    position: absolute;
-                    content: "by_suxrob";
-                    bottom: 0;
-                    right: 25%;
-                    color: #ffffff44;
-                    font-size: 2rem;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                }
                 text-align: start;
-
                 h2 {
                     padding-bottom: 20px;
                 }
@@ -2686,7 +2675,6 @@ button {
                             button {
                                 margin: 0 10%;
                                 width: 80%;
-                                background-color: red;
                             }
 
                         }
