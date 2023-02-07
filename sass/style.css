@@ -1859,9 +1859,9 @@ button {
   }
   .container main section:nth-of-type(2) .section_row_3 .section_row_3_card button {
     font-size: 18px;
-    margin: 10px 10%;
-    width: 80%;
-    height: 50px;
+    margin: 10px 20%;
+    width: 60%;
+    height: 40px;
   }
 }
 @media screen and (max-width: 255px) {
