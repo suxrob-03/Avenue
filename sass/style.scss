@@ -2429,7 +2429,6 @@ button {
                     .section_row_2 {
                         display: block;
                         height: 500px;
-                        background-color: red;
 
 
                         h1 {
@@ -2571,14 +2570,18 @@ button {
                         grid-template-columns: 1fr;
 
                         .section_row_1_col_two {
+                            background-color: red;
                             h1 {
                                 padding-top: 50px;
                                 text-align: center;
                                 font-size: 32px;
                                 line-height: 42px;
+                                br{
+                                    display: block;
+                                }
 
                                 sub {
-                                    font-size: 12px;
+                                    font-size: 18px;
                                 }
 
 

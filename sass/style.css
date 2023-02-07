@@ -1583,7 +1583,6 @@ button {
   .container main section:nth-of-type(3) .section_row_2 {
     display: block;
     height: 500px;
-    background-color: red;
   }
   .container main section:nth-of-type(3) .section_row_2 h1 {
     padding: 60px 40px 0;
@@ -1685,14 +1684,20 @@ button {
   .container main section:nth-of-type(2) .section_row_1 {
     grid-template-columns: 1fr;
   }
+  .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two {
+    background-color: red;
+  }
   .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 {
     padding-top: 50px;
     text-align: center;
     font-size: 32px;
     line-height: 42px;
   }
+  .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 br {
+    display: block;
+  }
   .container main section:nth-of-type(2) .section_row_1 .section_row_1_col_two h1 sub {
-    font-size: 12px;
+    font-size: 18px;
   }
   .container main section:nth-of-type(2) .section_row_2 .section_row_2_col_one h1 {
     font-size: 32px;
