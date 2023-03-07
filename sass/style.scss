@@ -11,12 +11,6 @@ button {
     cursor: pointer;
 }
 
-// @font-face {
-//     font-family: "Eastwood";
-//     src: url("../font/eastwood.regular.ttf");
-// }
-
-// https://www.figma.com/file/EpYNn3DNqUauAz5tPnYVR7/Sourcefile?node-id=0%3A1&t=8miH9kbuVN4734lE-0
 .container {
     width: 100%;
     height: auto;
@@ -128,7 +122,7 @@ button {
         }
 
         .menu {
-            
+
             display: none;
 
 
@@ -146,8 +140,10 @@ button {
 
         section {
             width: 100%;
+
             &:nth-of-type(1) {
                 padding-top: 100px;
+
                 .section_row_1 {
                     padding: 50px 6%;
                     display: flex;
@@ -927,6 +923,14 @@ button {
     .container {
         width: 1980px;
         margin: auto;
+
+        nav {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1980px;
+        }
+
+
     }
 
 }
@@ -2520,14 +2524,16 @@ button {
                 }
 
                 .menu_ul {
-                    background-color: #000;
-                    width: 150px;
-                    height: 200px;
+                    background-color: #313131;
+                    width: 100%;
+                    ;
+                    height: 60vh;
                     position: absolute;
                     top: 60px;
                     right: 0;
                     border-radius: 16px 0 16px 0;
                     display: none;
+                    z-index: 1;
 
                     ul {
                         width: 100%;
@@ -2535,10 +2541,10 @@ button {
                         text-align: center;
 
                         li {
-                            padding: 8px 0;
+                            padding: 24px 0;
 
                             a {
-                                font-size: 24px;
+                                font-size: 32px;
                             }
                         }
                     }
@@ -2551,6 +2557,7 @@ button {
             section {
                 &:nth-of-type(1) {
                     padding-top: 0;
+
                     .section_row_3 {
                         .section_row_3_card {
                             height: 300px;
@@ -2575,11 +2582,12 @@ button {
                                 text-align: center;
                                 font-size: 38px;
                                 line-height: 36px;
-                                
+
                                 sub {
-                                    br{
+                                    br {
                                         display: block;
                                     }
+
                                     font-size: 24px;
                                 }
 
@@ -2590,27 +2598,29 @@ button {
 
                     .section_row_2 {
                         .section_row_2_col_one {
-                            padding-top:0 ;
+                            padding-top: 0;
 
                             h1 {
                                 padding-top: 50px;
                                 text-align: center;
                                 font-size: 34px;
                                 line-height: 36px;
-                                br{
+
+                                br {
                                     display: none;
                                 }
-                                
+
                                 sub {
-                                    br{
+                                    br {
                                         display: block;
                                     }
+
                                     font-size: 24px;
                                 }
 
 
                             }
-                            
+
 
                             p {
                                 font-size: 16px;
@@ -2719,6 +2729,7 @@ button {
 
                     .section_row_2 {
                         padding: 0 6%;
+
                         .section_row_2_col_one {
                             h1 {
                                 padding: 0;
@@ -2764,6 +2775,7 @@ button {
 
                 &:nth-of-type(3) {
                     padding: 0;
+
                     .section_row_1 {
 
                         .section_row_1_col_one {
@@ -2774,6 +2786,7 @@ button {
 
                         .section_row_1_col_two {
                             height: 500px;
+
                             .section_card {
                                 .sectino_row_1_col_two_row_aa1 {
                                     h2 {
@@ -2801,7 +2814,7 @@ button {
 
                         .button {
                             height: 100px;
-                            padding:80px 0;
+                            padding: 80px 0;
 
                         }
                     }
@@ -2819,11 +2832,12 @@ button {
         main {
             section {
                 &:nth-of-type(1) {
-                    .section_row_1{
-                        .section_row_1_col_one{
-                            .button_two{
+                    .section_row_1 {
+                        .section_row_1_col_one {
+                            .button_two {
                                 display: block;
-                                button{
+
+                                button {
                                     padding: 0;
                                     line-height: 0;
                                     width: 50%;
@@ -2834,6 +2848,7 @@ button {
                             }
                         }
                     }
+
                     .section_row_3 {
                         .section_row_3_card {
                             width: 100%;
@@ -2849,7 +2864,7 @@ button {
                                 width: 50%;
                                 height: 50px;
 
-                                a{
+                                a {
                                     font-size: 18px;
                                 }
                             }
@@ -2881,13 +2896,15 @@ button {
 
                     .section_row_2 {
                         padding: 0 6%;
+
                         .section_row_2_col_one {
                             h1 {
                                 padding: 0;
                                 font-size: 24px;
                                 line-height: 28px;
                                 text-align: center;
-                                sub{
+
+                                sub {
                                     font-size: 18px;
                                 }
 
@@ -2918,7 +2935,7 @@ button {
                                 width: 50%;
                                 height: 50px;
 
-                                a{
+                                a {
                                     font-size: 18px;
                                 }
 
@@ -2930,6 +2947,7 @@ button {
 
                 &:nth-of-type(3) {
                     padding: 0;
+
                     .section_row_1 {
 
                         .section_row_1_col_one {
@@ -2940,6 +2958,7 @@ button {
 
                         .section_row_1_col_two {
                             height: 550px;
+
                             .section_card {
                                 .sectino_row_1_col_two_row_aa1 {
                                     h2 {
@@ -2967,7 +2986,7 @@ button {
 
                         .button {
                             height: 100px;
-                            padding:80px 0;
+                            padding: 80px 0;
 
                         }
                     }
@@ -3001,7 +3020,7 @@ button {
                                 margin: 0 20%;
                                 width: 60%;
 
-                                a{
+                                a {
                                     font-size: 18px;
                                 }
                             }
@@ -3033,13 +3052,15 @@ button {
 
                     .section_row_2 {
                         padding: 0 6%;
+
                         .section_row_2_col_one {
                             h1 {
                                 padding: 0;
                                 font-size: 24px;
                                 line-height: 28px;
                                 text-align: center;
-                                sub{
+
+                                sub {
                                     font-size: 18px;
                                 }
 
@@ -3069,7 +3090,7 @@ button {
                                 margin: 0 20%;
                                 width: 60%;
 
-                                a{
+                                a {
                                     font-size: 18px;
                                 }
 
@@ -3081,6 +3102,7 @@ button {
 
                 &:nth-of-type(3) {
                     padding: 0;
+
                     .section_row_1 {
 
                         .section_row_1_col_one {
@@ -3091,6 +3113,7 @@ button {
 
                         .section_row_1_col_two {
                             height: 550px;
+
                             .section_card {
                                 .sectino_row_1_col_two_row_aa1 {
                                     h2 {
@@ -3118,7 +3141,7 @@ button {
 
                         .button {
                             height: 100px;
-                            padding:80px 0;
+                            padding: 80px 0;
 
                         }
                     }
